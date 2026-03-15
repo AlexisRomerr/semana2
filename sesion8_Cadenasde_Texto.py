@@ -86,3 +86,12 @@ cancion_Minuscula = cancion.lower()
 mensaje = "hOlA kACe progRMando o qUe HaCe"
 mensajeCorrecto = mensaje.capitalize()
 # print(mensajeCorrecto)
+
+## Las flipantess aventuras de el gato con bolson magico y alfredo
+titulo = "Las flipantess aventuras de el gato con bolson magico y alfredo"
+tituloCorrecto = titulo.title()
+# print(tituloCorrecto)
+
+## swapCase() permite cambiar entre mayusculas y minusculas
+swapCaseTitulo = tituloCorrecto.swapcase()
+print(swapCaseTitulo)
