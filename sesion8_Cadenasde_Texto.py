@@ -82,4 +82,10 @@ cancion_Mayusculas = cancion.upper()
 # print(cancion_Mayusculas)
 
 cancion_Minuscula = cancion.lower()
-print(cancion_Minuscula)
+# print(cancion_Minuscula)
+
+nombre = "Alexis"
+nombre2 = "Pepe"
+
+comparar = nombre.casefold() == nombre2.casefold()
+print(comparar)
