@@ -1,4 +1,3 @@
-#
 poema = ("Siempre intento de mi mente desprenderla",)
 "Cada día más falta me hace, quiero verla",
 "Ya mis nervios no soportan su ausencia",
@@ -84,13 +83,29 @@ cancion_Mayusculas = cancion.upper()
 cancion_Minuscula = cancion.lower()
 # print(cancion_Minuscula)
 
-nombre = "Alexis"
-nombre2 = "Pepe"
+mensaje = "hOlA kACe progRMando o qUe HaCe"
+mensajeCorrecto = mensaje.capitalize()
+# print(mensajeCorrecto)
 
-comparar = nombre.casefold() == nombre2.casefold()
-print(comparar)
+## Las flipantess aventuras de el gato con bolson magico y alfredo
+titulo = "Las flipantess aventuras de el gato con bolson magico y alfredo"
+tituloCorrecto = titulo.title()
+# print(tituloCorrecto)
 
-## verificar que solo sean numeros
-print("verificar que solo sean numeros")
-solo_numeros = numero.isdigit()
-print(solo_numeros)
+## swapCase() permite cambiar entre mayusculas y minusculas
+swapCaseTitulo = tituloCorrecto.swapcase()
+# print(swapCaseTitulo)
+
+## metodos de validacion
+numero = "512"
+solo_letras = "El chico del apartamentos "
+Coro = "piribiribanban"
+
+quieroSoloLetras = numero.isalpha()
+print(quieroSoloLetras)
+
+## numeros y letras
+print("numeros y letras")
+numeros_letras = solo_letras + numero
+evaluarTexto = numeros_letras.isalnum()
+print(evaluarTexto)
