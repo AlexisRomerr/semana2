@@ -82,3 +82,7 @@ cancion_Mayusculas = cancion.upper()
 
 cancion_Minuscula = cancion.lower()
 # print(cancion_Minuscula)
+
+mensaje = "hOlA kACe progRMando o qUe HaCe"
+mensajeCorrecto = mensaje.capitalize()
+# print(mensajeCorrecto)
