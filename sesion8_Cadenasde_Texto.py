@@ -1,4 +1,3 @@
-#
 poema = ("Siempre intento de mi mente desprenderla",)
 "Cada día más falta me hace, quiero verla",
 "Ya mis nervios no soportan su ausencia",
@@ -82,4 +81,4 @@ cancion_Mayusculas = cancion.upper()
 # print(cancion_Mayusculas)
 
 cancion_Minuscula = cancion.lower()
-print(cancion_Minuscula)
+# print(cancion_Minuscula)
