@@ -89,3 +89,8 @@ nombre2 = "Pepe"
 
 comparar = nombre.casefold() == nombre2.casefold()
 print(comparar)
+
+## verificar que solo sean numeros
+print("verificar que solo sean numeros")
+solo_numeros = numero.isdigit()
+print(solo_numeros)
