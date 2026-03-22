@@ -18,11 +18,38 @@ def saludo(nombres):
 
 ## Colocar el nombre de la serie como titulo
 fmaTemu = Serie.title()
-saludo(Serie)
-saludo(fmaTemu)
+# saludo(Serie)
+# saludo(fmaTemu)
 
 fmaMayusculas = Serie.upper()
-saludo(fmaMayusculas)
+# saludo(fmaMayusculas)
 
-FullmetalCapitalize = Serie.capitalize()
-saludo(FullmetalCapitalize)
+FullmetalCapitalize = fmaMayusculas.swapcase().title()
+
+# saludo(FullmetalCapitalize)
+
+comparar1 = "Ever "
+comparar2 = "Ever"
+
+variableTemporal = comparar1.casefold()
+comparar = comparar1.casefold() == comparar2.casefold()
+# print(comparar)
+
+clasicas2005 = "Gasolina"
+compararisAlpha = clasicas2005.isalpha()
+# print(compararisAlpha, 2005)
+
+letraCancion = "Lo que paso, paso, entre tu y yo."
+decada = "10"
+
+# isalnum verifica si la cadena solo tiene numeros y si es asi da True
+# si tiene un solo espacio dara False tambien.
+
+ejemplo = letraCancion.isalnum()
+# print(ejemplo)
+
+ejemplo = decada.isalnum()
+# print(ejemplo)
+
+comprobarDecadas = decada.isdigit()
+print(comprobarDecadas)
