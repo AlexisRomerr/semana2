@@ -49,19 +49,25 @@ NOMBREtRAMITE = ""
 NOMBREtRAMITE = input("Ingrese el nombre del tramite: ")
 nombreComparacion = input("Ingrese el nombre del tramite a comparar: ")
 
-# 1- minuscula
-NOMBREtRAMITE = (
-    NOMBREtRAMITE.lower().strip().replace(" ", "")
-)  ## pasa a minuscula y quito espacios
-print(NOMBREtRAMITE)
-# 2- comparacion
-respuetaComparacionNombre = NOMBREtRAMITE.casefold() == nombreComparacion.casefold()
-## compara que sea iguales
-# 3- validar que no tenga numeros o espacios
-print(respuetaComparacionNombre)
-NombreSinnumerosOEspacios = NOMBREtRAMITE.isalnum()
-print(NombreSinnumerosOEspacios)
-# compara que no tengan nuemros o espacios
 
-if respuetaComparacionNombre and NombreSinnumerosOEspacios:
-    print("El nombre del tramite es correcto")
+def trasformar(nombre):
+    ## pasar a minusculas
+    nombre = nombre.lower()
+    ## Eline los espacios al inicio
+    nombre = nombre.strip()
+    ## eliminar los espacios intermedios
+    nombre = nombre.replace(" ", "")
+    return nombre
+
+
+def validar(nombre, nombreComparacion):
+    return nombre.casefold() == nombreComparacion.casefold() and nombre.isalnum()
+
+
+nombre1 = trasformar(NOMBREtRAMITE)
+nombre2 = trasformar(nombreComparacion)
+
+if validar(nombre1, nombre2):
+    print("nombre valido para el tramite")
+else:
+    print("nombre no valido para el tramite")
